@@ -1,2 +1,2 @@
-# 05-Estruturas-de-Controle
- IF,ELSE,FOR,FORIN,FOROF
+# 04-test-Estruturas-de-Controle
+ IF,Else,For,Forof,Forin

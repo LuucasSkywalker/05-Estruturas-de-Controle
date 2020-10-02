@@ -14,30 +14,15 @@ test(8);
 const test2 = ((value)=>{
 
     if (value >= 6){
-        return `voce foi aprovado, sua nota ${value}`
+        //return `voce foi aprovado, sua nota ${value}`
+        //ou então usar console.log(value)
+        console.log('sua nota foi ' + value)
     } else {
         return `REPROVADO, sua nota ${value}`
     };
 });
 const res2 = test2(9)
-console.log(res2)
-
-/* arrow function
- não precisar colocar FUNCTION pois é 
- substituido pelos parentes (**)
-*/
-
-let calc = (n1,n2) => {
-    return n1 + n2;
-}
-let res = calc(5, 5);
-console.log(res);
-
-// Arrow sem return
-
-let calc = (n1,n2) => {n1 * n2}
-let res = calc(3,3)
-console.log(res)
+//console.log(res2)
 
   /******************************************** */
 

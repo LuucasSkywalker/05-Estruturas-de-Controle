@@ -1,3 +1,56 @@
+
+// function Normal com parametros
+
+function calc (n1, n2){
+    return n1 * n2
+}
+let res = calc(2,4);
+console.log(res);
+
+
+function test (value){
+if (value <= 6) {
+
+    console.log(value)
+}
+
+}
+test(5);
+test(8);
+
+/****************************************** */
+
+const test2 = ((value)=>{
+
+    if (value >= 6){
+        return `voce foi aprovado, sua nota ${value}`
+    } else {
+        return `REPROVADO, sua nota ${value}`
+    };
+});
+const res2 = test2(9)
+console.log(res2)
+
+/* arrow function
+ não precisar colocar FUNCTION pois é 
+ substituido pelos parentes (**)
+*/
+
+let calc = (n1,n2) => {
+    return n1 + n2;
+}
+let res = calc(5, 5);
+console.log(res);
+
+// Arrow sem return
+
+let calc = (n1,n2) => {n1 * n2}
+let res = calc(3,3)
+console.log(res)
+
+  /******************************************** */
+
+  
 const age = 70
 console.log(`Voce tem ${age} anos.`);
 if (age < 16 ){

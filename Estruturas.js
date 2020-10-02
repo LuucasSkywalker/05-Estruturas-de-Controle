@@ -1,13 +1,4 @@
 
-// function Normal com parametros
-
-function calc (n1, n2){
-    return n1 * n2
-}
-let res = calc(2,4);
-console.log(res);
-
-
 function test (value){
 if (value <= 6) {
 
@@ -50,7 +41,7 @@ console.log(res)
 
   /******************************************** */
 
-  
+
 const age = 70
 console.log(`Voce tem ${age} anos.`);
 if (age < 16 ){

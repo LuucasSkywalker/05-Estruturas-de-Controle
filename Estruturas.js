@@ -148,3 +148,26 @@ const names = ['name:Lucas','name:Larissa','name:Annabelle'];
 for (let n = 0; n < names.length; n++){
     console.log(`${n} = ${names[n]}`)
 };
+
+/**********usando o for IN no array******** */
+
+const note = [7.2 ,2.5, 8.4, 6.2] 
+
+for (let c in note){
+    console.log(`${c} = ${note[c]}`)
+};
+
+/*******percorendo Objetos usando FOR IN******* */
+
+const person = {
+    name1:'Lucas',
+    name2:'Larissa',
+    name3:'Annabelle',
+    name4:'Torresmo',
+    name5:'peppa',
+
+};
+
+for (let p in person){
+    console.log( `${p} = ${person[p]}`)
+};

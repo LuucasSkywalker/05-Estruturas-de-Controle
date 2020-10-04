@@ -1,5 +1,5 @@
 
-function test (value){
+const test = function (value){
 if (value <= 6) {
 
     console.log(value)
@@ -139,4 +139,12 @@ switch (sinal){
 }
 } else {
     console.log('Desculpe sua idade nao e permitida');
+};
+
+/******percorendo um array com for****** */
+
+const names = ['name:Lucas','name:Larissa','name:Annabelle'];
+
+for (let n = 0; n < names.length; n++){
+    console.log(`${n} = ${names[n]}`)
 };

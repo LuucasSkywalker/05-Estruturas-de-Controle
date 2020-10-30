@@ -54,7 +54,7 @@ if (time < 08 || time < 12){
 };
  
 
-/************************************************* */
+//---------------------------------------------------------------------**
 
 const timenow = new Date();
 const time1 = timenow.getHours();
@@ -104,8 +104,7 @@ switch (date) {
           break;
 }
 
-/************************************************** */
-
+//---------------------------------------------------------------------**
 
 const age2  = 18
 if (age2 < 18){
@@ -115,7 +114,7 @@ console.log(` Bem Vindo(a). Sua idade e ${age2} anos`);
 
 };
 
-/*************************************************** */
+//---------------------------------------------------------------------**
 // SWITCH DENTRO DE UMA CONDIÇÃO IF ..
 age3 = 15
 
@@ -141,7 +140,8 @@ switch (sinal){
     console.log('Desculpe sua idade nao e permitida');
 };
 
-/******percorendo um array com for****** */
+//---------------------------------------------------------------------**
+//PERCORENDO UM ARRAY USANDO FOR
 
 const names = ['name:Lucas','name:Larissa','name:Annabelle'];
 
@@ -149,7 +149,20 @@ for (let n = 0; n < names.length; n++){
     console.log(`${n} = ${names[n]}`)
 };
 
-/**********usando o for IN no array******** */
+//PERCORENDO UM ARRAY E ARMAZENANDO NELE UTILIZANDO O FOR
+const notas = [7.7, 8.5, 4.6, 6.1, 5.8, 5.5, 8.1, 4.9]
+
+const notasAprovadas = []
+for (let i = 0; i <= notas.length; i++){
+    if (notas[i] >= 6) {
+    notasAprovadas.push(notas[i])
+}}
+
+console.log(notasAprovadas)
+
+
+//---------------------------------------------------------------------**
+//usando o for IN no array
 
 const note = [7.2 ,2.5, 8.4, 6.2] 
 
@@ -157,7 +170,8 @@ for (let c in note){
     console.log(`${c} = ${note[c]}`)
 };
 
-/*******percorendo Objetos usando FOR IN******* */
+//---------------------------------------------------------------------**
+//percorendo Objetos usando FOR IN
 
 const person = {
     name1:'Lucas',
@@ -171,3 +185,17 @@ const person = {
 for (let p in person){
     console.log( `${p} = ${person[p]}`)
 };
+
+//Armazenando valores num ARRAY usando FOR IN
+const notas = [7.7, 8.5, 4.6, 6.1, 5.8, 5.5, 8,1, 4.9] //array com notas diferentes
+
+const notasAprovadas = []          //array vazío para armazenar elementos dentro
+for (let i in notas)               //usando um for in para percorrer o array notas
+if (notas[i] >= 6) {               //usando um if para usar a condição do valor que é aprovado 
+    notasAprovadas.push(notas[i])  //usando o push para armazenar os valores aprovados no array
+}
+console.log(notasAprovadas)        //valor retornado 7.7, 8.5, 6.1, 8.1
+
+
+
+//---------------------------------------------------------------------**

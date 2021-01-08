@@ -15,7 +15,7 @@ const test2 = ((value)=>{
 
     if (value >= 6){
         //return `voce foi aprovado, sua nota ${value}`
-        //ou então usar console.log(value)
+        //ou então usar console.log(value) para gerar o valor
         console.log('sua nota foi ' + value)
     } else {
         return `REPROVADO, sua nota ${value}`
